@@ -1,7 +1,7 @@
-##fRNC: A R package to uncover RBP-ncRNA circuits from multi-omics data
+## fRNC: A R package to uncover RBP-ncRNA circuits from multi-omics data
 
 
-##Description
+## Description
 
 The RNA binding protein (RBP) and non-coding RNA (ncRNA) interacting networks are increasingly recognized as main
 mechanism in post-transcriptional regulation, and tightly associated with cellular malfunction and disease. Here,
@@ -11,8 +11,8 @@ CLIP-seq or PARE data. Given scoring on each node in the network, it finds a RNC
 genes. Alternatively, it can also search locally maximum RNCs according to user defined nodes. It enables users flexibly
 to analyse and visualize the collective behaviors between a RBP and its interacting ncRNAs in a malfunctioned biological process.
 
-##Getting Started
-###Step 1. Install package dependencies 
+## Getting Started
+### Step 1. Install package dependencies 
      install_dependpackages <- function(){
          metr_pkgs <- c("survminer", "limma", "ggpubr", "XML", "igraph", "multtest","RBGL","edgeR")  
          list_installed <- installed.packages()
