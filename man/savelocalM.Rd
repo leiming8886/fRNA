@@ -2,7 +2,7 @@
 % Please edit documentation in R/savelocalM.R
 \name{savelocalM}
 \alias{savelocalM}
-\title{save module for the methd "local" result}
+\title{save and plot module}
 \usage{
 savelocalM(res.list_local)
 }
@@ -11,8 +11,7 @@ savelocalM(res.list_local)
 }
 \value{
 the plot and the format "XGMML" of the each module, filenames is the seed node
- @export
 }
 \description{
-save module for the methd "local" result
+save and plot module for the methd "local" result
 }

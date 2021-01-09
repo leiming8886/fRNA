@@ -4,7 +4,7 @@
 \alias{survival.miR_rna}
 \title{survival analysis}
 \usage{
-survival.miR_rna(miRNA_profile, gene_profile, clinData)
+survival.miR_rna(miRNA_profile = NULL, gene_profile = NULL, clinData = NULL)
 }
 \arguments{
 \item{miRNA_profile}{the miRNA expressin data matrix,in which the row name is gene id and the column name is sample id.}

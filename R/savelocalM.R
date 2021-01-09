@@ -1,12 +1,12 @@
-#' @title save module for the methd "local" result
+#' @title save and plot module
 #'
-#' @description save module for the methd "local" result
+#' @description save and plot module for the methd "local" result
 #'
 #' @param res.list_local the methd "local" result
 
 #' @return the plot and the format "XGMML" of the each module, filenames is the seed node
-#'  @export
 
+#' @export
 savelocalM <- function(res.list_local){
     list_local <- res.list_local$module
    Map(function(x, i) {
