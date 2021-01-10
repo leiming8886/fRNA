@@ -12,5 +12,5 @@ miRNA-seq expression data in the ECSA normal samples, the row names are miRNA mi
 }
 \examples{
 data("control.exp_miRNA")
-control.exp_miRNA[1:100,]
+head(control.exp_miRNA[1:100,])
 }

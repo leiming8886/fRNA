@@ -12,5 +12,5 @@ miRNA-seq expression data in the ECSA cancer samples, the row names are miRNA mi
 }
 \examples{
 data("case.exp_miRNA")
-case.exp_miRNA[1:100,]
+head(case.exp_miRNA[1:100,])
 }

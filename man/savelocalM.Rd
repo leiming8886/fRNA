@@ -7,11 +7,11 @@
 savelocalM(res.list_local)
 }
 \arguments{
-\item{res.list_local}{the methd "local" result}
+\item{res.list_local}{the methd local result}
 }
 \value{
-the plot and the format "XGMML" of the each module, filenames is the seed node
+the plot and the format XGMML of the each module, filenames is the seed node
 }
 \description{
-save and plot module for the methd "local" result
+save and plot module for the method local result in the function runmodule
 }

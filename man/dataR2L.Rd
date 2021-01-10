@@ -12,5 +12,5 @@ Data example consisting of a matrix of network.
 }
 \examples{
 data("dataR2L")
-dataR2L[1:100,]
+head(dataR2L[1:100,])
 }

@@ -12,5 +12,5 @@ RNA-seq expression data in the ECSA cancer samples, the row names are RNA mirbas
 }
 \examples{
 data("case.exp_rna")
-case.exp_rna[1:100,]
+head(case.exp_rna[1:100,])
 }
