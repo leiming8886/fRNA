@@ -8,5 +8,5 @@
 #' @usage data("clinData")
 #'
 #' @examples data("clinData")
-#'clinData[1:100,]
+#'head(clinData[1:100,])
 NULL

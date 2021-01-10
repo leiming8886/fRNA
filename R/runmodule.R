@@ -37,7 +37,7 @@
 #' gene2weight <- combinp(dataN[,c("type","logFC","PValue")])
 #' interac <- interStringency(type = "ncRNA",stringency = "strict")
 #' interac <- interac[,c("node_gene_ID","type","target_gene_ID")]
-#'  res.list_global <- runmodule(network = interac, gene2weight, method = "global")
+#'  res.list_global <- runmodule(network = interac, gene2weight, method = "global",FDR = 1e-14)
 #'  res.list_local <- runmodule(network = interac, gene2weight, method = "local",
 #'  maxsize=15, seletN = "MIMAT0000461")
 #' }

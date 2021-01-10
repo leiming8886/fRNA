@@ -8,5 +8,5 @@
 #' @usage data("gene_type")
 #'
 #' @examples data("gene_type")
-#'gene_type[1:100,]
+#'head(gene_type[1:100,])
 NULL
