@@ -10,6 +10,8 @@ transcriptomics, interactomics and clinical data. fRNC constructs the RBP-ncRNA 
 CLIP-seq or PARE data. Given scoring on each node in the network, it finds a RNC containing global maximum significant 
 genes. Alternatively, it can also search locally maximum RNCs according to user defined nodes. It enables users flexibly
 to analyse and visualize the collective behaviors between a RBP and its interacting ncRNAs in a malfunctioned biological process.
+The basic workflow in fRNC consists of three steps: 1) data input and processing, 2) detecting aberrant RNCs, 3) results output.
+![alt text](https://github.com/leiming8886/fRNC/blob/master/docs/flow.png?raw=true)
 
 ## Getting Started
 ### Step 1. Install package dependencies
@@ -45,11 +47,23 @@ devtools::install_github("leiming8886/fRNC",ref = "master")
 ## Example
 -------
 Below is a quick example of how the package can be used.
-
-
-
-
-
-
-
-
+Case 1:
+We downloaded miRNA, mRNA and circRNA expression data of esophageal carcinoma (ESCA) and normal samples from TCGA and MiOncoCirc. 
+The miRNA, mRNA-seq data consist of 161 tumors with 11 normal samples in the TCGA, and circRNA data with 19 tumors and 25 normal samples
+ in MiOncoCirc. The miRNA-lncRNA and miRNA-circRNA interactions were extracted from ENCORI with a high stringency, where the number of 
+ the supported CLIP experimental evidence is 3 or greater. The R package edgeR was used to analyze the differentially expressed miRNAs, 
+ mRNAs and lncRNAs. The result was saved with the data "dataN". 
+```R
+data("dataN")
+gene2weight <- combinp(dataN[,c("type","logFC","PValue")])
+interac <- interStringency(type = "ncRNA",stringency = "strict")
+interac <- interac[,c("node_gene_ID","type","target_gene_ID")]
+res.list_global <- runmodule(network = interac, gene2weight, method = "global",FDR = 1e-14)
+res.list_local <- runmodule(network = interac, gene2weight, method = "local",
+maxsize=15, seletN = "MIMAT0000461")
+```
+Save global and local module results respectively. And, the result was saved as XGMML file and then observed it in the Cytoscape environment.
+```R
+saveNetwork(res.list_global$module,file="ceRNA_module",type = "XGMML")
+savelocalM(res.list_local)
+```
