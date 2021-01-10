@@ -44,6 +44,7 @@ install.packages("devtools")
 library(devtools)
 # Step 2: Install fRNC
 devtools::install_github("leiming8886/fRNC",ref = "master")
+library(fRNC)
 ```
 ## Example
 -------
@@ -55,6 +56,7 @@ The miRNA, mRNA-seq data consist of 161 tumors with 11 normal samples in the TCG
  the supported CLIP experimental evidence is 3 or greater. The R package edgeR was used to analyze the differentially expressed miRNAs, 
  mRNAs and lncRNAs. The result was saved with the data "dataN". 
 ```R
+library(fRNC)
 data("dataN")
 gene2weight <- combinp(dataN[,c("type","logFC","PValue")])
 interac <- interStringency(type = "ncRNA",stringency = "strict")
