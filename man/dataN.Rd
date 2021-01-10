@@ -12,5 +12,5 @@ Data example consisting of a matrix of the colname of genes, type, logFC, logCPM
 }
 \examples{
 data("dataN")
-dataN[1:100,]
+head(dataN[1:100,])
 }

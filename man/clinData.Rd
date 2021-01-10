@@ -12,5 +12,5 @@ clinical data in the ECSA cancer patients, the column names are TCGA sample ID(c
 }
 \examples{
 data("clinData")
-clinData[1:100,]
+head(clinData[1:100,])
 }

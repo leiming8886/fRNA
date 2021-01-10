@@ -12,5 +12,5 @@ Data  consisting of a matrix, the colname contain gene_ID and gene_Name
 }
 \examples{
 data("gene_type")
-gene_type[1:100,]
+head(gene_type[1:100,])
 }

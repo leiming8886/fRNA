@@ -12,5 +12,5 @@ RNA-seq expression data in the ECSA normal samples, the row names are RNA mirbas
 }
 \examples{
 data("control.exp_rna")
-control.exp_rna[1:100,]
+head(control.exp_rna[1:100,])
 }

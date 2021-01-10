@@ -19,7 +19,7 @@ extract lncRNA-circRNA ceRNA pair
 }
 \examples{
 \dontrun{
-interac <- interStringency(type = "ncRNA", stringency = "high")
-interac_high_p_50 <- cepair(interac, N_mi= 50)
+interac <- interStringency(type = "ncRNA", stringency = "strict")
+interac_strict_p_50 <- cepair(interac, N_mi= 50)
 }
 }
