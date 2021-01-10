@@ -10,9 +10,10 @@ transcriptomics, interactomics and clinical data. fRNC constructs the RBP-ncRNA 
 CLIP-seq or PARE data. Given scoring on each node in the network, it finds a RNC containing global maximum significant 
 genes. Alternatively, it can also search locally maximum RNCs according to user defined nodes. It enables users flexibly
 to analyse and visualize the collective behaviors between a RBP and its interacting ncRNAs in a malfunctioned biological process.
-The basic workflow in fRNC consists of three steps: 1) data input and processing, 2) detecting aberrant RNCs, 3) results output.
-![alt text](https://github.com/leiming8886/fRNC/blob/master/docs/flow.png?raw=true)
-
+The basic workflow in fRNC consists of three steps: 1) data input and processing, 2) detecting aberrant RNCs, 3) results output.  
+<p align="center">
+<img src = "https://github.com/leiming8886/fRNC/blob/master/docs/flow.png">
+</p>
 ## Getting Started
 ### Step 1. Install package dependencies
 Enter the R function (install_dependpackages) in the R below and run it. A some message will appear to inform you whether or not any R packages dependencies were installed.
@@ -41,7 +42,7 @@ fRNC is freely available from GitHub.
 # Step 1: Install devtools
 install.packages("devtools")
 library(devtools)
-# Step 2: Install MetaboAnalystR with documentation
+# Step 2: Install fRNC
 devtools::install_github("leiming8886/fRNC",ref = "master")
 ```
 ## Example
