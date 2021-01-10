@@ -1,4 +1,4 @@
-## fRNC: A R package to uncover RBP-ncRNA circuits from multi-omics data
+## fRNC: An R package to uncover RBP-ncRNA circuits from multi-omics data
 
 
 ## Description
