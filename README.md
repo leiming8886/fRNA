@@ -12,7 +12,9 @@ genes. Alternatively, it can also search locally maximum RNCs according to user 
 to analyse and visualize the collective behaviors between a RBP and its interacting ncRNAs in a malfunctioned biological process.
 
 ## Getting Started
-### Step 1. Install package dependencies 
+### Step 1. Install package dependencies
+Enter the R function (install_dependpackages) in the R below and run it. A some message will appear to inform you whether or not any R packages dependencies were installed.
+```R
      install_dependpackages <- function(){
          metr_pkgs <- c("survminer", "limma", "ggpubr", "XML", "igraph", "multtest","RBGL","edgeR")  
          list_installed <- installed.packages()
@@ -27,4 +29,17 @@ to analyse and visualize the collective behaviors between a RBP and its interact
                 print("No new packageswill be installed...")
             }
         }
+```
+```R
      install_dependpackages()
+```
+### Step 2. Install the package
+fRNC is freely available from GitHub. The package documentation, including the vignettes for each module and user manual
+ is available within the downloaded R package file. A) using the R package devtools, B) cloning the github.
+```R
+# Step 1: Install devtools
+install.packages("devtools")
+library(devtools)
+# Step 2: Install MetaboAnalystR with documentation
+devtools::install_github("xia-lab/MetaboAnalystR", build = TRUE, build_vignettes = TRUE, build_manual =T)
+```
