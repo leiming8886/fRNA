@@ -43,8 +43,8 @@ library(devtools)
 devtools::install_github("leiming8886/fRNC",ref = "master")
 ```
 ## Example
-
-
+-------
+Below is a quick example of how the package can be used.
 
 
 

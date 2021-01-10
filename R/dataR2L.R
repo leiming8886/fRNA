@@ -8,5 +8,5 @@
 #' @usage data("dataR2L")
 #'
 #' @examples data("dataR2L")
-#'dataR2L[1:100,]
+#'head(dataR2L[1:100,])
 NULL

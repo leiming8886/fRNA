@@ -8,5 +8,5 @@
 #' @usage data("dataN")
 #'
 #' @examples data("dataN")
-#'dataN[1:100,]
+#'head(dataN[1:100,])
 NULL

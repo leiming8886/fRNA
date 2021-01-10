@@ -8,5 +8,5 @@
 #' @usage data("case.exp_rna")
 #'
 #' @examples data("case.exp_rna")
-#'case.exp_rna[1:100,]
+#'head(case.exp_rna[1:100,])
 NULL
