@@ -26,7 +26,7 @@ Enter the R function (install_dependpackages) in the R below and run it. A some 
                 print(c(new_pkgs, " packages will be installed..."))
             }  
           if((length(new_pkgs)<1)){
-                print("No new packageswill be installed...")
+                print("No new packages will be installed...")
             }
         }
 ```
@@ -34,12 +34,22 @@ Enter the R function (install_dependpackages) in the R below and run it. A some 
      install_dependpackages()
 ```
 ### Step 2. Install the package
-fRNC is freely available from GitHub. The package documentation, including the vignettes for each module and user manual
- is available within the downloaded R package file. A) using the R package devtools, B) cloning the github.
+fRNC is freely available from GitHub.
 ```R
 # Step 1: Install devtools
 install.packages("devtools")
 library(devtools)
 # Step 2: Install MetaboAnalystR with documentation
-devtools::install_github("xia-lab/MetaboAnalystR", build = TRUE, build_vignettes = TRUE, build_manual =T)
+devtools::install_github("leiming8886/fRNC",ref = "master")
 ```
+## Example
+
+
+
+
+
+
+
+
+
+
