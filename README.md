@@ -10,6 +10,7 @@ transcriptomics, interactomics and clinical data. fRNC constructs the RBP-ncRNA 
 CLIP-seq or PARE data. Given scoring on each node in the network, it finds a RNC containing global maximum significant 
 genes. Alternatively, it can also search locally maximum RNCs according to user defined nodes. It enables users flexibly
 to analyse and visualize the collective behaviors between a RBP and its interacting ncRNAs in a malfunctioned biological process.
+The attachment and reference manual of this package is available in the docs directory 
 
 ## Getting Started
 ### Step 1. Install package dependencies
