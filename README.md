@@ -19,7 +19,7 @@ The basic workflow in fRNC consists of three steps: 1) data input and processing
 Enter the R function (install_dependpackages) in the R below and run it. A some message will appear to inform you whether or not any R packages dependencies were installed.
 ```R
      install_dependpackages <- function(){
-         metr_pkgs <- c("survminer", "limma", "ggpubr", "XML", "igraph", "multtest","RBGL","edgeR")  
+         metr_pkgs <- c("limma", "ggpubr", "XML", "igraph", "multtest","RBGL","edgeR")  
          list_installed <- installed.packages()
          new_pkgs <- subset(metr_pkgs, !(metr_pkgs %in% list_installed[, "Package"])) 
          if(length(new_pkgs)!=0){   
@@ -70,3 +70,7 @@ Save global and local module results respectively. And, the result was saved as 
 saveNetwork(res.list_global$module,file="ceRNA_module",type = "XGMML")
 savelocalM(res.list_local)
 ```
+
+## Contact
+If you have an comments, suggestions, corrections or ideas to install ,use, improve or extend this package, feel free to contact me. 
+my email is leiming8886@163.com. You also submit a report on the  [Github issues page](https://github.com/leiming8886/fRNC/issues)
