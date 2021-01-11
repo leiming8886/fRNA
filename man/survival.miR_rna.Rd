@@ -28,7 +28,7 @@ hazards regression model is calculated on the R package survival.
 \examples{
 \dontrun{
 result_miR <- DEGs(case.exp_miRNA,control.exp_miRNA,
-geneid= rownames(control.exp_miRNA),
+geneid= rownames(control.exp_miRNA),data_type = "RNAseq_counts")
 result_rna <- DEGs(case.exp_rna,control.exp_rna,
 geneid= rownames(control.exp_rna), data_type = "RNAseq_counts")
 interac <- interac[,c("node_gene_ID","type","target_gene_ID")]
