@@ -10,13 +10,10 @@ transcriptomics, interactomics and clinical data. fRNC constructs the RBP-ncRNA 
 CLIP-seq or PARE data. Given scoring on each node in the network, it finds a RNC containing global maximum significant 
 genes. Alternatively, it can also search locally maximum RNCs according to user defined nodes. It enables users flexibly
 to analyse and visualize the collective behaviors between a RBP and its interacting ncRNAs in a malfunctioned biological process.
-The basic workflow in fRNC consists of three steps: 1) data input and processing, 2) detecting aberrant RNCs, 3) results output.  
-
-<img src = "https://github.com/leiming8886/fRNC/blob/master/docs/flow.png">
 
 ## Getting Started
 ### Step 1. Install package dependencies
-Enter the R function (install_dependpackages) in the R below and run it. A some message will appear to inform you whether or not any R packages dependencies were installed.
+Enter the R function (install_dependpackages) in the R below and run it. some messages will appear to inform you whether or not any R packages dependencies have been installed.
 ```R
      install_dependpackages <- function(){
          metr_pkgs <- c("limma", "ggpubr", "XML", "igraph", "multtest","RBGL","edgeR")  
@@ -49,7 +46,6 @@ library(fRNC)
 ## Example
 -------
 Below is a quick example of how the package can be used.
-Case 1:
 We downloaded miRNA, mRNA and circRNA expression data of esophageal carcinoma (ESCA) and normal samples from TCGA and MiOncoCirc. 
 The miRNA, mRNA-seq data consist of 161 tumors with 11 normal samples in the TCGA, and circRNA data with 19 tumors and 25 normal samples
  in MiOncoCirc. The miRNA-lncRNA and miRNA-circRNA interactions were extracted from ENCORI with a high stringency, where the number of 
@@ -73,4 +69,4 @@ savelocalM(res.list_local)
 
 ## Contact
 If you have an comments, suggestions, corrections or ideas to install ,use, improve or extend this package, feel free to contact me. 
-my email is leiming8886@163.com. You also submit a report on the  [Github issues page](https://github.com/leiming8886/fRNC/issues)
+my email is leiming8886\@163.com. You also submit a report on the  [Github issues page](https://github.com/leiming8886/fRNC/issues)
